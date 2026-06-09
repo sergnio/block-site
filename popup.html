@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: -apple-system, system-ui, sans-serif;
+        width: 280px;
+        margin: 0;
+        padding: 14px;
+        background: #1e1e1e;
+        color: #eee;
+      }
+      h1 { font-size: 15px; margin: 0 0 10px; }
+      .row { display: flex; gap: 6px; margin-bottom: 10px; }
+      input {
+        flex: 1;
+        padding: 6px 8px;
+        border: 1px solid #444;
+        border-radius: 6px;
+        background: #2a2a2a;
+        color: #eee;
+        font-size: 13px;
+      }
+      button {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        background: #4f8cff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+      }
+      button:hover { background: #3b78f0; }
+      ul { list-style: none; margin: 0; padding: 0; }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 8px;
+        background: #2a2a2a;
+        border-radius: 6px;
+        margin-bottom: 6px;
+        font-size: 13px;
+      }
+      li button {
+        background: transparent;
+        color: #ff6b6b;
+        padding: 2px 6px;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .empty { color: #888; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h1>Blocked Sites</h1>
+    <div class="row">
+      <input id="site" type="text" placeholder="example.com" />
+      <button id="add">Add</button>
+    </div>
+    <ul id="list"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
